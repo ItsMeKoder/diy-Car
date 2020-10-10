@@ -1,0 +1,11 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Version=0.0.1
+Type=Application
+Terminal=false
+Name=Car Wi-fi Control
+Exec=/home/kavish/myapp/usr/bin/car-wifi-control
+Comment=A simple Program to control a DIY car over wifi
+Icon=car
+Categories=Utility;;
+
