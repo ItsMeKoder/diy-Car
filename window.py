@@ -68,11 +68,11 @@ class CarWindow(Gtk.Window):
         #currentip="192.168.1.73"
         #entry.set_text(currentip)
         
-        global changedip
-        changedip = ""
-        changedip = entry.get_text()
+        
+        self.changedip = ""
+        self.changedip = entry.get_text()
         print(changedip)
-        entry.set_text(changedip)
+        #entry.set_text(changedip)
             
         def chip():
             return changedip
@@ -82,22 +82,20 @@ class CarWindow(Gtk.Window):
         self.popover.set_position(Gtk.PositionType.BOTTOM)
         
         def r(self):
-            print(chip())
-            print (changedip)
-            entry.set_text(changedip)
-            os.system("curl "+changedip+"/right")
+   
+            os.system("curl "+self.changedip+"/right")
         def l(self):
             print(chip())
             print (changedip)
-            os.system("curl "+changedip+"/right")
+            os.system("curl "+self.changedip+"/right")
         def f(self):
             print(chip())
             print (changedip)
-            os.system("curl "+changedip+"/right")
+            os.system("curl "+self.changedip+"/right")
         def b(self):
             print(chip())
             print (changedip)
-            os.system("curl "+changedip+"/right")
+            os.system("curl "+self.changedip+"/right")
         
         btRight=Gtk.Button(label="Right")
         btRight.connect('clicked',r)
