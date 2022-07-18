@@ -1,1 +1,1 @@
-# DIY mobile controlled car.
+# DIY mobile controlled car frontend (python).
